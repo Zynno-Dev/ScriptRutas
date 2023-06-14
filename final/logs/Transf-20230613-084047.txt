@@ -1,0 +1,62 @@
+
+2023-06-13 08:40:50.391519 Se obtuvieron todas las FC
+2023-06-13 08:40:59.907272 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_Campamentos ha sido proyectada como FC_Campamentos_proyectada en la geodatabase de destino.
+2023-06-13 08:41:03.158310 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_POZOS_PI_INFOPROD ha sido proyectada como FC_POZOS_PI_INFOPROD_proyectada en la geodatabase de destino.
+2023-06-13 08:41:07.353916 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_PuestoControl ha sido proyectada como FC_PuestoControl_proyectada en la geodatabase de destino.
+2023-06-13 08:41:11.494540 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_Ele_Reconectadores ha sido proyectada como FC_Ele_Reconectadores_proyectada en la geodatabase de destino.
+2023-06-13 08:41:14.427957 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_Ele_Seccionadores ha sido proyectada como FC_Ele_Seccionadores_proyectada en la geodatabase de destino.
+2023-06-13 08:41:18.280990 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_Ele_Seccionalizadores ha sido proyectada como FC_Ele_Seccionalizadores_proyectada en la geodatabase de destino.
+2023-06-13 08:41:22.037619 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_Ele_Interruptores ha sido proyectada como FC_Ele_Interruptores_proyectada en la geodatabase de destino.
+2023-06-13 08:41:25.080064 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_Manifolds ha sido proyectada como FC_Manifolds_proyectada en la geodatabase de destino.
+2023-06-13 08:41:28.958862 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_CargaderosAgua ha sido proyectada como FC_CargaderosAgua_proyectada en la geodatabase de destino.
+2023-06-13 08:41:32.720574 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_Poblaciones ha sido proyectada como FC_Poblaciones_proyectada en la geodatabase de destino.
+2023-06-13 08:41:36.597662 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_Tranqueras ha sido proyectada como FC_Tranqueras_proyectada en la geodatabase de destino.
+2023-06-13 08:41:39.552322 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_Plantas ha sido proyectada como FC_Plantas_proyectada en la geodatabase de destino.
+2023-06-13 08:41:43.460624 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_Compresores_Campo ha sido proyectada como FC_Compresores_Campo_proyectada en la geodatabase de destino.
+2023-06-13 08:41:46.465706 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_Baterias ha sido proyectada como FC_Baterias_proyectada en la geodatabase de destino.
+2023-06-13 08:41:49.454649 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_UnidadLACT ha sido proyectada como FC_UnidadLACT_proyectada en la geodatabase de destino.
+2023-06-13 08:41:53.417299 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_Punto_Venta_Gas ha sido proyectada como FC_Punto_Venta_Gas_proyectada en la geodatabase de destino.
+2023-06-13 08:41:56.720559 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_Puntos_Venteo ha sido proyectada como FC_Puntos_Venteo_proyectada en la geodatabase de destino.
+2023-06-13 08:42:00.074030 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_PMedicion_EMP ha sido proyectada como FC_PMedicion_EMP_proyectada en la geodatabase de destino.
+2023-06-13 08:42:03.123991 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_NQN.gdb\FC_Canteras ha sido proyectada como FC_Canteras_proyectada en la geodatabase de destino.
+2023-06-13 08:42:06.439658 Se obtuvieron todas las FC de la geodatabase original
+2023-06-13 08:42:09.223992 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_Campamentos ha sido proyectada como FC_Campamentos_proyectada en la geodatabase de destino.
+2023-06-13 08:42:12.617667 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_POZOS_PI_INFOPROD ha sido proyectada como FC_POZOS_PI_INFOPROD_proyectada en la geodatabase de destino.
+2023-06-13 08:42:14.997861 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_PuestoControl ha sido proyectada como FC_PuestoControl_proyectada en la geodatabase de destino.
+2023-06-13 08:42:17.980678 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_Ele_Reconectadores ha sido proyectada como FC_Ele_Reconectadores_proyectada en la geodatabase de destino.
+2023-06-13 08:42:20.430718 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_Ele_Seccionadores ha sido proyectada como FC_Ele_Seccionadores_proyectada en la geodatabase de destino.
+2023-06-13 08:42:23.170350 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_Ele_Seccionalizadores ha sido proyectada como FC_Ele_Seccionalizadores_proyectada en la geodatabase de destino.
+2023-06-13 08:42:27.138230 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_Ele_Interruptores ha sido proyectada como FC_Ele_Interruptores_proyectada en la geodatabase de destino.
+2023-06-13 08:42:30.187177 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_Manifolds ha sido proyectada como FC_Manifolds_proyectada en la geodatabase de destino.
+2023-06-13 08:42:33.152868 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_CargaderosAgua ha sido proyectada como FC_CargaderosAgua_proyectada en la geodatabase de destino.
+2023-06-13 08:42:36.356965 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_Poblaciones ha sido proyectada como FC_Poblaciones_proyectada en la geodatabase de destino.
+2023-06-13 08:42:39.223115 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_Tranqueras ha sido proyectada como FC_Tranqueras_proyectada en la geodatabase de destino.
+2023-06-13 08:42:42.054701 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_Plantas ha sido proyectada como FC_Plantas_proyectada en la geodatabase de destino.
+2023-06-13 08:42:45.201867 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_Compresores_Campo ha sido proyectada como FC_Compresores_Campo_proyectada en la geodatabase de destino.
+2023-06-13 08:42:48.157466 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_Baterias ha sido proyectada como FC_Baterias_proyectada en la geodatabase de destino.
+2023-06-13 08:42:51.266386 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_UnidadLACT ha sido proyectada como FC_UnidadLACT_proyectada en la geodatabase de destino.
+2023-06-13 08:42:54.642272 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_Punto_Venta_Gas ha sido proyectada como FC_Punto_Venta_Gas_proyectada en la geodatabase de destino.
+2023-06-13 08:42:58.153252 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_Puntos_Venteo ha sido proyectada como FC_Puntos_Venteo_proyectada en la geodatabase de destino.
+2023-06-13 08:43:01.423508 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_PMedicion_EMP ha sido proyectada como FC_PMedicion_EMP_proyectada en la geodatabase de destino.
+2023-06-13 08:43:04.472782 La clase de entidad C:\Users\xnas02\Desktop\Script Ruteo Caminos\final\Servicios_GSJ.gdb\FC_Canteras ha sido proyectada como FC_Canteras_proyectada en la geodatabase de destino.
+2023-06-13 08:43:04.712906 Se creo la geodatabase de salida
+2023-06-13 08:44:10.338371 Se fusionaron las feature classes de las geodatabases de origen
+2023-06-13 08:44:12.107066 No se pudo fusionar la feature class FC_Campamentos_proyectada
+2023-06-13 08:44:13.527214 No se pudo fusionar la feature class FC_POZOS_PI_INFOPROD_proyectada
+2023-06-13 08:44:14.857599 No se pudo fusionar la feature class FC_PuestoControl_proyectada
+2023-06-13 08:44:16.259135 No se pudo fusionar la feature class FC_Ele_Reconectadores_proyectada
+2023-06-13 08:44:17.620659 No se pudo fusionar la feature class FC_Ele_Seccionadores_proyectada
+2023-06-13 08:44:18.984769 No se pudo fusionar la feature class FC_Ele_Seccionalizadores_proyectada
+2023-06-13 08:44:20.397304 No se pudo fusionar la feature class FC_Ele_Interruptores_proyectada
+2023-06-13 08:44:21.839850 No se pudo fusionar la feature class FC_Manifolds_proyectada
+2023-06-13 08:44:23.211385 No se pudo fusionar la feature class FC_CargaderosAgua_proyectada
+2023-06-13 08:44:24.585595 No se pudo fusionar la feature class FC_Poblaciones_proyectada
+2023-06-13 08:44:25.935273 No se pudo fusionar la feature class FC_Tranqueras_proyectada
+2023-06-13 08:44:27.475847 No se pudo fusionar la feature class FC_Plantas_proyectada
+2023-06-13 08:44:28.877532 No se pudo fusionar la feature class FC_Compresores_Campo_proyectada
+2023-06-13 08:44:30.307054 No se pudo fusionar la feature class FC_Baterias_proyectada
+2023-06-13 08:44:31.731575 No se pudo fusionar la feature class FC_UnidadLACT_proyectada
+2023-06-13 08:44:33.172109 No se pudo fusionar la feature class FC_Punto_Venta_Gas_proyectada
+2023-06-13 08:44:34.714391 No se pudo fusionar la feature class FC_Puntos_Venteo_proyectada
+2023-06-13 08:44:36.239507 No se pudo fusionar la feature class FC_PMedicion_EMP_proyectada
+2023-06-13 08:44:37.790066 No se pudo fusionar la feature class FC_Canteras_proyectada

@@ -1,0 +1,3 @@
+
+2023-06-13 11:50:55.563327 Se obtuvieron todas las FC
+2023-06-13 11:50:56.726265 Se creo la geodatabase de destino

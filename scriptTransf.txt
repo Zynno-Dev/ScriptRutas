@@ -1,0 +1,77 @@
+import arcpy
+
+# Rutas de las File Geodatabases de entrada
+input_gdb1 = r"C:\Users\xnas02\Desktop\Script Ruteo Caminos\Migraciones\Servicios_GSJ.gdb"
+input_gdb2 = r"C:\Users\xnas02\Desktop\Script Ruteo Caminos\Migraciones\Servicios_NQN.gdb"
+
+# Ruta de la File Geodatabase de salida (con las capas transformadas y fusionadas)
+output_gdb = r"C:\Users\xnas02\Desktop\Script Ruteo Caminos\Migraciones\Servicios_WGS.gdb"
+
+# Definir el sistema de coordenadas de entrada para ambas File Geodatabases
+input_coordinate_system1 = arcpy.SpatialReference("GEOGCS['GCS_Pampa_del_Castillo',DATUM['D_Pampa_del_Castillo',SPHEROID['International_1924',6378388.0,297.0]],PRIMEM['Greenwich',0.0],UNIT['Degree',0.0174532925199433]]")
+input_coordinate_system2 = arcpy.SpatialReference("GEOGCS['GCS_Chos_Malal_1914',DATUM['D_Chos_Malal_1914',SPHEROID['International_1924',6378388.0,297.0]],PRIMEM['Greenwich',0.0],UNIT['Degree',0.0174532925199433]]")
+
+# Definir el sistema de coordenadas de salida (para ambas File Geodatabases)
+output_coordinate_system = arcpy.SpatialReference("GEOGCS['GCS_WGS_1984',DATUM['D_WGS_1984',SPHEROID['WGS_1984',6378137.0,298.257223563]],PRIMEM['Greenwich',0.0],UNIT['Degree',0.0174532925199433]]")
+
+# Crear la File Geodatabase de salida
+arcpy.CreateFileGDB_management(r"C:\Users\xnas02\Desktop\Script Ruteo Caminos\Migraciones\file_geodatabase.gdb")
+
+# Obtener una lista de todas las capas en la File Geodatabase 1 de entrada
+layer_list1 = arcpy.ListFeatureClasses(feature_dataset='/', workspace=input_gdb1)
+
+# Iterar sobre las capas de la File Geodatabase 1 y transformarlas a la File Geodatabase de salida
+for layer in layer_list1:
+    # Ruta completa de la capa de entrada en la File Geodatabase 1
+    input_layer = input_gdb1 + "/" + layer
+    
+    # Ruta completa de la capa de salida en la File Geodatabase de salida
+    output_layer = output_gdb + "/" + layer
+    
+    # Realizar la transformación de coordenadas de la capa de la File Geodatabase 1 a la File Geodatabase de salida
+    arcpy.Project_management(input_layer, output_layer, output_coordinate_system, input_coordinate_system1)
+
+# Obtener una lista de todas las capas en la File Geodatabase 2 de entrada
+layer_list2 = arcpy.ListFeatureClasses(feature_dataset='/', workspace=input_gdb2)
+
+# Iterar sobre las capas de la File Geodatabase 2 y transformarlas a la File Geodatabase de salida
+for layer in layer_list2:
+    # Ruta completa de la capa de entrada en la File Geodatabase 2
+    input_layer = input_gdb2 + "/" + layer
+    
+    # Ruta completa de la capa de salida en la File Geodatabase de salida
+    output_layer = output_gdb + "/" + layer
+    
+    # Realizar la transformación de coordenadas de la capa de la File Geodatabase 2 a la File Geodatabase de salida
+    arcpy.Project_management(input_layer, output_layer, output_coordinate_system, input_coordinate_system2)
+
+# Fusionar las capas con el mismo nombre en la File Geodatabase de salida
+merged_layers = set(layer_list1).union(set(layer_list2))
+
+for layer in merged_layers:
+    # Ruta completa de la capa en la File Geodatabase de salida
+    output_layer = output_gdb
+
+    # Comprobar si la capa existe en la File Geodatabase 1
+    if layer in layer_list1:
+        # Ruta completa de la capa en la File Geodatabase 1
+        input_layer1 = input_gdb1 + "/" + layer
+        
+        # Ruta completa de la capa en la File Geodatabase de salida
+        output_layer = output_gdb + "/" + layer
+        
+        # Fusionar la capa de la File Geodatabase 1 con la capa existente en la File Geodatabase de salida
+        arcpy.Append_management(input_layer1, output_layer, "NO_TEST")
+    
+    # Comprobar si la capa existe en la File Geodatabase 2
+    if layer in layer_list2:
+        # Ruta completa de la capa en la File Geodatabase 2
+        input_layer2 = input_gdb2 + "/" + layer
+        
+        # Ruta completa de la capa en la File Geodatabase de salida
+        output_layer = output_gdb + "/" + layer
+        
+        # Fusionar la capa de la File Geodatabase 2 con la capa existente en la File Geodatabase de salida
+        arcpy.Append_management(input_layer2, output_layer, "NO_TEST")
+
+print("Transformación y fusión completadas.")
