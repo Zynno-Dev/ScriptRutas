@@ -37,13 +37,18 @@ def log(message):
 	arcpy.AddMessage(message)
 
 text_file = None
-STARTUP_PATH = os.path.dirname(__file__)
+STARTUP_PATH = os.path.dirname(os.path.abspath(__file__))
 timestr = time.strftime("%Y%m%d-%H%M%S")
 file_output = "\\logs\\Transf-" + timestr + ".txt"
 carpeta_actual = os.path.dirname(os.path.abspath(__file__))
 
 ############################################################
 # Creacion .gtf
+
+try:
+    rmtree(os.path.join(carpeta_actual, 'Servicios_GSW.gdb'))
+except:
+    log("No existe Servicios_GSW.gdb")
 
 try:
     log("Create Custom Transformation GSJ: PampaToWGS")
