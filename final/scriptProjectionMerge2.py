@@ -152,16 +152,19 @@ if "NQN" in UGs:
     geodatabase1 = os.path.join(carpeta_actual, 'proyectado.gdb')
     arcpy.env.workspace = geodatabase1
     lista_fc_geodatabase1 = arcpy.ListFeatureClasses()
+    log("Se obtuvieron todas las FC de la geodatabase de NQN")
 
 if "GSJ" in UGs:
     geodatabase2 = os.path.join(carpeta_actual, 'proyectado2.gdb')
     arcpy.env.workspace = geodatabase2
     lista_fc_geodatabase2 = arcpy.ListFeatureClasses()
+    log("Se obtuvieron todas las FC de la geodatabase de GSJ")
 
 if "ACA" in UGs:
     geodatabase3 = os.path.join(carpeta_actual, 'proyectado3.gdb')
     arcpy.env.workspace = geodatabase3
     lista_fc_geodatabase3 = arcpy.ListFeatureClasses()
+    log("Se obtuvieron todas las FC de la geodatabase de ACA")
 
 geodatabase_salida = os.path.join(carpeta_actual, 'Servicios_GSW.gdb')
 
@@ -170,24 +173,28 @@ if not arcpy.Exists(geodatabase_salida):
     log("Se creo la geodatabase de salida")
 
 if "NQN" in UGs and "GSJ" in UGs and "ACA" in UGs:
+    log("Se fusionan las geodatabases de NQN, GSJ y ACA")
     arcpy.env.workspace = geodatabase1
     for fc in lista_fc_geodatabase1:
         nombre_fc = os.path.splitext(fc)[0]
 
         arcpy.Merge_management([geodatabase1 + '\\' + fc, geodatabase2 + '\\' + fc, geodatabase3 + '\\' + fc], geodatabase_salida + '\\' + nombre_fc)
 elif "NQN" in UGs and "ACA" in UGs:
+    log("Se fusionan las geodatabases de NQN y ACA")
     arcpy.env.workspace = geodatabase1
     for fc in lista_fc_geodatabase1:
         nombre_fc = os.path.splitext(fc)[0]
 
         arcpy.Merge_management([geodatabase1 + '\\' + fc, geodatabase3 + '\\' + fc], geodatabase_salida + '\\' + nombre_fc)
 elif "GSJ" in UGs and "ACA" in UGs:
+    log("Se fusionan las geodatabases de GSJ y ACA")
     arcpy.env.workspace = geodatabase2
     for fc in lista_fc_geodatabase2:
         nombre_fc = os.path.splitext(fc)[0]
 
         arcpy.Merge_management([geodatabase2 + '\\' + fc, geodatabase3 + '\\' + fc], geodatabase_salida + '\\' + nombre_fc)
 elif "NQN" in UGs and "GSJ" in UGs:
+    log("Se fusionan las geodatabases de NQN y GSJ")
     arcpy.env.workspace = geodatabase1
     for fc in lista_fc_geodatabase1:
         nombre_fc = os.path.splitext(fc)[0]
@@ -195,18 +202,21 @@ elif "NQN" in UGs and "GSJ" in UGs:
         arcpy.Merge_management([geodatabase1 + '\\' + fc, geodatabase2 + '\\' + fc], geodatabase_salida + '\\' + nombre_fc)
 else:
     if "NQN" in UGs:
+        log("Se copian las geodatabases de NQN")
         arcpy.env.workspace = geodatabase1
         for fc in lista_fc_geodatabase1:
             nombre_fc = os.path.splitext(fc)[0]
 
             arcpy.CopyFeatures_management(geodatabase1 + '\\' + fc, geodatabase_salida + '\\' + nombre_fc)
     elif "GSJ" in UGs:
+        log("Se copian las geodatabases de GSJ")
         arcpy.env.workspace = geodatabase2
         for fc in lista_fc_geodatabase2:
             nombre_fc = os.path.splitext(fc)[0]
 
             arcpy.CopyFeatures_management(geodatabase2 + '\\' + fc, geodatabase_salida + '\\' + nombre_fc)
     elif "ACA" in UGs:
+        log("Se copian las geodatabases de ACA")
         arcpy.env.workspace = geodatabase3
         for fc in lista_fc_geodatabase3:
             nombre_fc = os.path.splitext(fc)[0]
